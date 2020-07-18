@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Simulator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Color Simulator</h1>
+    <form>
+      <div class="wrapper">
+        <ul>
+          <li>
+            <label
+              ><span>(R) Red: </span
+              ><input
+                type="range"
+                class="input"
+                id="R"
+                min="0"
+                max="255"
+                value="0" />
+              <input type="text" class="value" disabled readonly value="0"
+            /></label>
+          </li>
+          <li>
+            <label
+              ><span>(G) Green: </span
+              ><input
+                type="range"
+                class="input"
+                id="G"
+                min="0"
+                max="255"
+                value="0" />
+              <input type="text" class="value" disabled readonly value="0"
+            /></label>
+          </li>
+          <li>
+            <label
+              ><span>(B) Blue: </span
+              ><input
+                type="range"
+                class="input"
+                min="0"
+                id="B"
+                max="255"
+                value="0" />
+              <input type="text" class="value" disabled readonly value="0"
+            /></label>
+          </li>
+        </ul>
+        <div class="square"></div>
+        <div>
+          <button id="reset">Reset</button> <button id="random">Random</button>
+        </div>
+      </div>
+    </form>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
